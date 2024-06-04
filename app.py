@@ -15,7 +15,8 @@ from urllib.parse import urlparse
 import mlflow
 from mlflow.models import infer_signature
 import mlflow.sklearn
-
+import dagshub
+dagshub.init(repo_owner='aadhil.imam', repo_name='mlflow-experiment-dagshub', mlflow=True)
 import logging
 
 logging.basicConfig(level=logging.WARN)
